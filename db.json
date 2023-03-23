@@ -1,9 +1,22 @@
 {
-  "messages": [
+  "message": [
     {
-      "message": "Type your comment here.",
-      "author": "sagasg",
+      "message": "First message",
+      "author": "Andrii Ba6aka",
+      "dateTime": "3/23/2023, 6:40:13 PM",
       "id": 1
+    },
+    {
+      "message": "Хто такий Джон Голт?",
+      "author": "Riaden",
+      "dateTime": "3/23/2023, 6:42:10 PM",
+      "id": 2
+    },
+    {
+      "message": "фіфпфіп",
+      "author": "14121п",
+      "dateTime": "3/23/2023, 6:42:40 PM",
+      "id": 3
     }
   ]
 }

@@ -19,9 +19,13 @@ function forms() {
 
             const formData = new FormData(form);
 
+            let today = new Date();
+            let now = today.toLocaleString();
+            formData.append('dateTime', now);
+
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-            postData('http://localhost:3000/messages', json)
+            postData('http://localhost:3000/message', json)
                 .then((data) => {
                     console.log(data);
                 }).catch(() => {

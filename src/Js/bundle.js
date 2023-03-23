@@ -16,19 +16,22 @@ function createNewMessage() {
     data.forEach(_ref => {
       let {
         message,
-        author
+        author,
+        dateTime
       } = _ref;
       const parent = document.querySelector('.messages');
       const newItem = document.createElement('div');
       newItem.innerHTML = `
             <div class="messages__item">
             <div class="text">${message}</div>
-            <div class="author">${author}</div>
-        </div>`;
+            <div class="message__td">
+                <div class="author">${author}</div>
+                <div class="message__date">${dateTime}</div>
+            </div>`;
       parent.append(newItem);
     });
   }
-  (0,_servises_servises__WEBPACK_IMPORTED_MODULE_0__.getData)('http://localhost:3000/messages').then(data => addNewItem(data));
+  (0,_servises_servises__WEBPACK_IMPORTED_MODULE_0__.getData)('http://localhost:3000/message').then(data => addNewItem(data));
 }
 /* harmony default export */ __webpack_exports__["default"] = (createNewMessage);
 
@@ -54,8 +57,11 @@ function forms() {
   function bindPostData(form) {
     form.addEventListener('submit', e => {
       const formData = new FormData(form);
+      let today = new Date();
+      let now = today.toLocaleString();
+      formData.append('dateTime', now);
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
-      (0,_servises_servises__WEBPACK_IMPORTED_MODULE_0__.postData)('http://localhost:3000/messages', json).then(data => {
+      (0,_servises_servises__WEBPACK_IMPORTED_MODULE_0__.postData)('http://localhost:3000/message', json).then(data => {
         console.log(data);
       }).catch(() => {}).finally(() => {
         form.reset();

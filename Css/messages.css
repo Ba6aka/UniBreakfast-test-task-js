@@ -54,3 +54,8 @@
   display: block;
   width: 300px;
 }
+
+.message__td {
+  display: flex;
+  justify-content: space-between;
+}
