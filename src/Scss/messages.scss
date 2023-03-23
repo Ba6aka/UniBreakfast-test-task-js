@@ -1,0 +1,56 @@
+.content {
+	margin: 0 auto;
+	max-width: 800px;
+}
+.messages {
+		max-width: 800px;
+	
+		&__item {
+
+		}
+}
+.text {
+	margin:20px 0px 0px 0px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.author {
+	margin:10px 0px 0px 0px;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.header {
+    margin: 30px 0px 30px 0px;
+    &__btns {
+        display: flex;
+        text-align: center;
+        a{
+            margin: 0 auto;
+            flex: 0 1 33.333%;
+        }
+    }
+}
+
+.create-message {
+	position: fixed;
+	bottom: 0;
+	left: 600px;
+  	width: 100%
+}
+.message {
+	display: block;
+	width: 300px;
+	height: 75px;
+}
+.author-name {
+	display: block;
+	width: 300px;
+}
+.send-message {
+	width: 40px;
+	height: 20px;
+	display: block;
+	width: 300px;
+}
