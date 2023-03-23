@@ -4,10 +4,10 @@ let path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: 'C:/MAMP/htdocs/UniBreakfast-test-task-fullstack-js/src/Js/script.js',
+  entry: 'C:/MAMP/htdocs/UniBreakfast-test-task-js/src/Js/script.js',
   output: {
     filename: 'bundle.js',
-    path: 'C:/MAMP/htdocs/UniBreakfast-test-task-fullstack-js/src/Js'
+    path: 'C:/MAMP/htdocs/UniBreakfast-test-task-js/src/Js'
   },
   watch: true,
 
