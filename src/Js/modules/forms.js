@@ -1,4 +1,5 @@
 import { postData } from "../servises/servises";
+import createNewMessage from "./create-newmessage";
 
 function forms() {
 
@@ -9,7 +10,7 @@ function forms() {
     forms.forEach(item => {
         bindPostData(item);
     });
-
+    
 
 
     function bindPostData(form) {
@@ -29,7 +30,7 @@ function forms() {
                 });
 
         });
-
+        createNewMessage();
     }
 }
 
