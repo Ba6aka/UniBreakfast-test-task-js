@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/messages.css">
     <title>Document</title>
+    <script defer src="src/Js/bundle.js"></script>
 </head>
 
 <body>
@@ -17,6 +18,7 @@
             <a href="">Average numbers</a>
         </div>
     </header>
+
     <main class="main">
         <div class="content">
             <div class="messages">
@@ -58,18 +60,19 @@
                         <div class="author">Hamlet</div>
                         <div class="message__date">13-12-2023</div>
                     </div>
-                   
-                    
-                </div>
-                <form class="create-message" action="">
-                    <textarea class="message" name="message">Type your comment here.</textarea>
-                    <input class="author-name" type="text" name="author" placeholder="Type your name">
-                    <button class="send-message">send</button>
-                </form>
-            </div>
+                    <button>delete</button>
 
+                </div>
+
+            </div>
+            <form class="create-message" action="">
+                <textarea class="message" name="message">Type your comment here.</textarea>
+                <input id="author-name" class="author-name" type="text" name="author" placeholder="Type your name">
+                <button class="send-message">send</button>
+            </form>
+        </div>
     </main>
 </body>
-<script src="src/Js/bundle.js"></script>
+
 
 </html>
