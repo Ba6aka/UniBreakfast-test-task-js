@@ -5,11 +5,9 @@ const postData = async (url, data) => {
             'Content-type': 'application/json'
         },
         body: data,
-
     });
 
     return await res.json();
-
 };
 
 const getData = async (url) => {
@@ -22,5 +20,4 @@ const getData = async (url) => {
     return await res.json();
 };
 
-export { getData };
-export { postData };
+export { getData, postData };
